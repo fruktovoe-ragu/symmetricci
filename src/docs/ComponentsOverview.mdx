@@ -1,0 +1,100 @@
+import { Meta } from "@storybook/blocks";
+import { Chip } from "./Chip";
+import { data } from "./data";
+
+<Meta title="Components Overview" />
+
+<div>
+  <h1 class="title">Components Overview</h1>
+  <div class="table">
+    <div class="table-row">
+        <div class="table-cell">
+            Component Name
+        </div>
+        <div class="table-cell">
+            Designed
+        </div>
+        <div class="table-cell">
+            Developed
+        </div>
+    </div>
+    {data.map(({ category, components }) =>
+        <div key="category">
+            <div class="table-title">{category}</div>
+            {components.map(({ name, designed, developed }) =>
+                <div class="table-row" key={name}>
+                    <div class="table-cell">
+                        {name}
+                    </div>
+                    <div class="table-cell">
+                        <Chip category={designed} />
+                    </div>
+                    <div class="table-cell">
+                        <Chip category={developed} />
+                    </div>
+                </div>
+            )}
+        </div>
+    )}
+  </div>
+</div>
+
+<style>
+  {`
+    .title {
+      margin-bottom: 25px;
+    }
+
+    .table {
+      border: 2px solid #EDEDEF;
+      border-top: none;
+      border-radius: 12px;
+      font-family: "Nunito Sans",-apple-system,".SFNSText-Regular","San Francisco",BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+      overflow: hidden;
+    }
+
+    .table-row {
+      display: flex;
+    }
+    .table-row:not(:last-child) {
+      border-bottom: 2px solid #EDEDEF;
+    }
+    .table-row:first-child {
+      background: #EDEDEF;
+      border: none;
+    }
+    .table-row:first-child > .table-cell {
+      font-weight: 600;
+    }
+    .table-row:first-child > .table-cell:not(:last-child) {
+      border-right: 2px solid white;
+    }
+
+    .table-cell {
+      color: #2E3438;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      width: 200px;
+    }
+    .table-cell:first-child {
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    .table-cell:not(:last-child) {
+        border-right: 2px solid #EDEDEF;
+    }
+
+    .table-cell > p {
+      margin: 0;
+    }
+
+    .table-title {
+      background: #F7F7F8;
+      border-bottom: 2px solid #EDEDEF;
+      padding: 16px 16px;
+    }
+
+  `}
+</style>

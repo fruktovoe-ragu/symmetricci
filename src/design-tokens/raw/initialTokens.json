@@ -1,0 +1,741 @@
+{
+  "spacing": {
+    "xxxs": {
+      "$value": "4px"
+    },
+    "xxs": {
+      "$value": "8px"
+    },
+    "xs": {
+      "$value": "12px"
+    },
+    "s": {
+      "$value": "16px"
+    },
+    "m": {
+      "$value": "24px"
+    },
+    "l": {
+      "$value": "32px"
+    },
+    "xl": {
+      "$value": "40px"
+    },
+    "xxl": {
+      "$value": "64px"
+    },
+    "xxxl": {
+      "$value": "80px"
+    }
+  },
+  "breakpoints": {
+    "min-width": {
+      "s": {
+        "$value": "320px"
+      },
+      "m": {
+        "$value": "768px"
+      },
+      "l": {
+        "$value": "1024px"
+      },
+      "xl": {
+        "$value": "1280px"
+      },
+      "xxl": {
+        "$value": "1440px"
+      }
+    },
+    "max-width": {
+      "s": {
+        "$value": "767px"
+      },
+      "m": {
+        "$value": "1023px"
+      },
+      "l": {
+        "$value": "1279px"
+      },
+      "xl": {
+        "$value": "1439px"
+      },
+      "xxl": {
+        "$value": "9999px"
+      }
+    }
+  },
+  "semantic-colors": {
+    "light": {
+      "foreground": {
+        "general": {
+          "primary": {
+            "$value": "#262e34"
+          },
+          "primary_inverted": {
+            "$value": "#ffffff"
+          },
+          "secondary": {
+            "$value": "#6e6e70"
+          },
+          "tertiary": {
+            "$value": "#868687"
+          },
+          "link": {
+            "$value": "#006adc"
+          },
+          "link_visited": {
+            "$value": "#5eb0ef"
+          },
+          "link_pressed": {
+            "$value": "#00254d"
+          },
+          "interactive": {
+            "$value": "#505050"
+          },
+          "interactive_inverted": {
+            "$value": "#d9e2fc"
+          },
+          "interactive_inverted-alt": {
+            "$value": "#ffffff"
+          },
+          "white_stable": {
+            "$value": "#ffffff"
+          },
+          "black-white": {
+            "$value": "#000000"
+          },
+          "transparent": {
+            "$value": "rgba(0, 0, 0, 0.4392)"
+          }
+        },
+        "brand": {
+          "brand1": {
+            "$value": "#5146CE"
+          },
+          "brand2": {
+            "$value": "#1A9991"
+          }
+        },
+        "status": {
+          "info": {
+            "$value": "#006adc"
+          },
+          "info_inverted": {
+            "$value": "#7ebfff"
+          },
+          "info-subdued": {
+            "$value": "#0091ff"
+          },
+          "success": {
+            "$value": "#18794e"
+          },
+          "success-subdued": {
+            "$value": "#30a46c"
+          },
+          "warning": {
+            "$value": "#c17a00"
+          },
+          "warning-subdued": {
+            "$value": "#ffb224"
+          },
+          "error": {
+            "$value": "#cd2b31"
+          },
+          "error-subdued": {
+            "$value": "#e5484d"
+          },
+          "disabled": {
+            "$value": "#909091"
+          }
+        }
+      },
+      "border": {
+        "general": {
+          "main": {
+            "$value": "#909091"
+          },
+          "main-subtle": {
+            "$value": "#e3e3e5"
+          },
+          "main-solid": {
+            "$value": "#262e34"
+          },
+          "interactive": {
+            "$value": "#505050"
+          },
+          "interactive_inverted": {
+            "$value": "#d9e2fc"
+          },
+          "interactive_hovered": {
+            "$value": "#707070"
+          },
+          "interactive_pressed": {
+            "$value": "#262e34"
+          },
+          "white": {
+            "$value": "#ffffff"
+          }
+        },
+        "brand": {
+          "brand1": {
+            "$value": "#5146CE"
+          },
+          "brand2": {
+            "$value": "#1A9991"
+          }
+        },
+        "status": {
+          "info": {
+            "$value": "#006adc"
+          },
+          "info_inverted": {
+            "$value": "#7ebfff"
+          },
+          "info-subdued": {
+            "$value": "#0091ff"
+          },
+          "success-subdued": {
+            "$value": "#30a46c"
+          },
+          "warning": {
+            "$value": "#c17a00"
+          },
+          "warning-subdued": {
+            "$value": "#ffb224"
+          },
+          "error": {
+            "$value": "#cd2b31"
+          },
+          "error-subdued": {
+            "$value": "#e5484d"
+          },
+          "disabled": {
+            "$value": "#c7c7c9"
+          },
+          "offset-general": {
+            "$value": "#96c7f2"
+          },
+          "offset-error": {
+            "$value": "#f3aeaf"
+          }
+        }
+      },
+      "background": {
+        "general": {
+          "main": {
+            "$value": "#ffffff"
+          },
+          "main_inverted": {
+            "$value": "#1c1c1c"
+          },
+          "main_alt-dark-mode": {
+            "$value": "#ffffff"
+          },
+          "main-alt": {
+            "$value": "#f7f7f8"
+          },
+          "underlying": {
+            "$value": "#f5f5f8"
+          },
+          "noticeable": {
+            "$value": "#ededef"
+          },
+          "negative": {
+            "$value": "#3e3e3e"
+          },
+          "negative-solid": {
+            "$value": "#1c1c1c"
+          },
+          "negative-subdued": {
+            "$value": "#505050"
+          },
+          "interactive": {
+            "$value": "#505050"
+          },
+          "interactive_inverted": {
+            "$value": "#eef1fd"
+          },
+          "interactive-subdued": {
+            "$value": "#8F8F8F"
+          },
+          "overlay": {
+            "$value": "rgba(0, 0, 0, 0.4392)"
+          },
+          "overlay-subtle": {
+            "$value": "rgba(0, 0, 0, 0.0902)"
+          },
+          "overlay-on-accent_hovered": {
+            "$value": "rgba(255, 255, 255, 0.2510)"
+          },
+          "overlay-on-accent_pressed": {
+            "$value": "rgba(0, 0, 0, 0.2196)"
+          },
+          "overlay-on-colorless_hovered": {
+            "$value": "rgba(0, 0, 0, 0.0471)"
+          },
+          "overlay-on-colorless_pressed": {
+            "$value": "rgba(0, 0, 0, 0.0902)"
+          },
+          "overlay-on-colorless_inverted-hovered": {
+            "$value": "rgba(255, 255, 255, 0.1804)"
+          },
+          "overlay-on-colorless_inverted-pressed": {
+            "$value": "rgba(255, 255, 255, 0.0902)"
+          }
+        },
+        "brand": {
+          "brand1-primary": {
+            "$value": "#5146CE"
+          },
+          "brand1-secondary_hovered": {
+            "$value": "rgba(81, 70, 206, 0.0902)"
+          },
+          "brand1-secondary_pressed": {
+            "$value": "rgba(81, 70, 206, 0.1412)"
+          },
+          "brand2-primary": {
+            "$value": "#1A9991"
+          },
+          "brand2-secondary_hovered": {
+            "$value": "rgba(26, 153, 145, 0.0902)"
+          },
+          "brand2-secondary_pressed": {
+            "$value": "rgba(26, 153, 145, 0.1412)"
+          }
+        },
+        "status": {
+          "info": {
+            "$value": "#f5faff"
+          },
+          "info_hovered": {
+            "$value": "rgba(0, 145, 255, 0.0902)"
+          },
+          "info_pressed": {
+            "$value": "rgba(0, 145, 255, 0.1412)"
+          },
+          "info_inverted-hovered": {
+            "$value": "rgba(54, 158, 255, 0.2510)"
+          },
+          "info_inverted-pressed": {
+            "$value": "rgba(54, 158, 255, 0.1216)"
+          },
+          "success": {
+            "$value": "#f2fcf5"
+          },
+          "warning": {
+            "$value": "#fff9ed"
+          },
+          "warning_hovered": {
+            "$value": "rgba(255, 178, 36, 0.0902)"
+          },
+          "warning_pressed": {
+            "$value": "rgba(255, 178, 36, 0.1412)"
+          },
+          "error": {
+            "$value": "#fff8f8"
+          },
+          "error_hovered": {
+            "$value": "rgba(229, 72, 77, 0.0902)"
+          },
+          "error_pressed": {
+            "$value": "rgba(229, 72, 77, 0.1412)"
+          },
+          "disabled": {
+            "$value": "#d9d9db"
+          },
+          "disabled-subtle": {
+            "$value": "#f5f5f8"
+          }
+        }
+      }
+    },
+    "dark": {
+      "foreground": {
+        "general": {
+          "primary": {
+            "$value": "#ededed"
+          },
+          "primary_inverted": {
+            "$value": "#262e34"
+          },
+          "secondary": {
+            "$value": "#a6a6a6"
+          },
+          "tertiary": {
+            "$value": "#7e7e7e"
+          },
+          "link": {
+            "$value": "#7ebfff"
+          },
+          "link_visited": {
+            "$value": "#1d6dc3"
+          },
+          "link_pressed": {
+            "$value": "#eaf6ff"
+          },
+          "interactive": {
+            "$value": "#d9e2fc"
+          },
+          "interactive_inverted": {
+            "$value": "#505050"
+          },
+          "interactive_inverted-alt": {
+            "$value": "#505050"
+          },
+          "white_stable": {
+            "$value": "#ffffff"
+          },
+          "black-white": {
+            "$value": "#ffffff"
+          },
+          "transparent": {
+            "$value": "rgba(255, 255, 255, 0.3882)"
+          }
+        },
+        "brand": {
+          "brand1": {
+            "$value": "#3c76e8"
+          },
+          "brand2": {
+            "$value": "#ec5e41"
+          }
+        },
+        "status": {
+          "info": {
+            "$value": "#7ebfff"
+          },
+          "info_inverted": {
+            "$value": "#006adc"
+          },
+          "info-subdued": {
+            "$value": "#0091ff"
+          },
+          "success": {
+            "$value": "#4cc38a"
+          },
+          "success-subdued": {
+            "$value": "#30a46c"
+          },
+          "warning": {
+            "$value": "#f1a10d"
+          },
+          "warning-subdued": {
+            "$value": "#ffb224"
+          },
+          "error": {
+            "$value": "#ff6369"
+          },
+          "error-subdued": {
+            "$value": "#e5484d"
+          },
+          "disabled": {
+            "$value": "#707070"
+          }
+        }
+      },
+      "border": {
+        "general": {
+          "main": {
+            "$value": "#707070"
+          },
+          "main-subtle": {
+            "$value": "#343434"
+          },
+          "main-solid": {
+            "$value": "#ededed"
+          },
+          "interactive": {
+            "$value": "#d9e2fc"
+          },
+          "interactive_inverted": {
+            "$value": "#505050"
+          },
+          "interactive_hovered": {
+            "$value": "#a6a6a6"
+          },
+          "interactive_pressed": {
+            "$value": "#707070"
+          },
+          "white": {
+            "$value": "#ffffff"
+          }
+        },
+        "brand": {
+          "brand1": {
+            "$value": "#3c76e8"
+          },
+          "brand2": {
+            "$value": "#ec5e41"
+          }
+        },
+        "status": {
+          "info": {
+            "$value": "#7ebfff"
+          },
+          "info_inverted": {
+            "$value": "#006adc"
+          },
+          "info-subdued": {
+            "$value": "#0091ff"
+          },
+          "success-subdued": {
+            "$value": "#30a46c"
+          },
+          "warning": {
+            "$value": "#f1a10d"
+          },
+          "warning-subdued": {
+            "$value": "#ffb224"
+          },
+          "error": {
+            "$value": "#ff6369"
+          },
+          "error-subdued": {
+            "$value": "#e5484d"
+          },
+          "disabled": {
+            "$value": "#505050"
+          },
+          "offset-general": {
+            "$value": "#1d6dc3"
+          },
+          "offset-error": {
+            "$value": "#822025"
+          }
+        }
+      },
+      "background": {
+        "general": {
+          "main": {
+            "$value": "#1c1c1c"
+          },
+          "main_inverted": {
+            "$value": "#ffffff"
+          },
+          "main_alt-dark-mode": {
+            "$value": "#2e2e2e"
+          },
+          "main-alt": {
+            "$value": "#232323"
+          },
+          "underlying": {
+            "$value": "#161616"
+          },
+          "noticeable": {
+            "$value": "#282828"
+          },
+          "negative": {
+            "$value": "#232323"
+          },
+          "negative-solid": {
+            "$value": "#000000"
+          },
+          "negative-subdued": {
+            "$value": "#343434"
+          },
+          "interactive": {
+            "$value": "#eef1fd"
+          },
+          "interactive_inverted": {
+            "$value": "#505050"
+          },
+          "interactive-subdued": {
+            "$value": "#707070"
+          },
+          "overlay": {
+            "$value": "rgba(255, 255, 255, 0.3882)"
+          },
+          "overlay-subtle": {
+            "$value": "rgba(255, 255, 255, 0.0314)"
+          },
+          "overlay-on-accent_hovered": {
+            "$value": "rgba(255, 255, 255, 0.2510)"
+          },
+          "overlay-on-accent_pressed": {
+            "$value": "rgba(0, 0, 0, 0.2196)"
+          },
+          "overlay-on-colorless_hovered": {
+            "$value": "rgba(255, 255, 255, 0.1804)"
+          },
+          "overlay-on-colorless_pressed": {
+            "$value": "rgba(255, 255, 255, 0.0902)"
+          },
+          "overlay-on-colorless_inverted-hovered": {
+            "$value": "rgba(0, 0, 0, 0.0471)"
+          },
+          "overlay-on-colorless_inverted-pressed": {
+            "$value": "rgba(0, 0, 0, 0.0902)"
+          }
+        },
+        "brand": {
+          "brand1-primary": {
+            "$value": "#5146CE"
+          },
+          "brand1-secondary_hovered": {
+            "$value": "rgba(81, 70, 206, 0.2510)"
+          },
+          "brand1-secondary_pressed": {
+            "$value": "rgba(81, 70, 206, 0.1216)"
+          },
+          "brand2-primary": {
+            "$value": "#1A9991"
+          },
+          "brand2-secondary_hovered": {
+            "$value": "rgba(26, 153, 145, 0.2510)"
+          },
+          "brand2-secondary_pressed": {
+            "$value": "rgba(26, 153, 145, 0.1216)"
+          }
+        },
+        "status": {
+          "info": {
+            "$value": "#0f1b2d"
+          },
+          "info_hovered": {
+            "$value": "rgba(54, 158, 255, 0.2510)"
+          },
+          "info_pressed": {
+            "$value": "rgba(54, 158, 255, 0.1216)"
+          },
+          "info_inverted-hovered": {
+            "$value": "rgba(0, 145, 255, 0.0902)"
+          },
+          "info_inverted-pressed": {
+            "$value": "rgba(0, 145, 255, 0.1412)"
+          },
+          "success": {
+            "$value": "#0c1f17"
+          },
+          "warning": {
+            "$value": "#271700"
+          },
+          "warning_hovered": {
+            "$value": "rgba(255, 203, 71, 0.2510)"
+          },
+          "warning_pressed": {
+            "$value": "rgba(255, 203, 71, 0.1216)"
+          },
+          "error": {
+            "$value": "#291415"
+          },
+          "error_hovered": {
+            "$value": "rgba(242, 85, 90, 0.2510)"
+          },
+          "error_pressed": {
+            "$value": "rgba(242, 85, 90, 0.1216)"
+          },
+          "disabled": {
+            "$value": "#3e3e3e"
+          },
+          "disabled-subtle": {
+            "$value": "#232323"
+          }
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "general": {
+        "$value": "Inter"
+      }
+    },
+    "size": {
+      "xxl": {
+        "$value": "28px"
+      },
+      "xl": {
+        "$value": "24px"
+      },
+      "l": {
+        "$value": "20px"
+      },
+      "m": {
+        "$value": "18px"
+      },
+      "s": {
+        "$value": "16px"
+      },
+      "xs": {
+        "$value": "14px"
+      },
+      "xxs": {
+        "$value": "12px"
+      },
+      "xxxs": {
+        "$value": "10px"
+      }
+    },
+    "line-height": {
+      "xxl": {
+        "$value": "40px"
+      },
+      "xl": {
+        "$value": "36px"
+      },
+      "l": {
+        "$value": "28px"
+      },
+      "m": {
+        "$value": "24px"
+      },
+      "s": {
+        "$value": "20px"
+      },
+      "xs": {
+        "$value": "16px"
+      },
+      "xxs": {
+        "$value": "14px"
+      }
+    },
+    "letter-space": {
+      "xxl": {
+        "$value": "-0.5899999737739563px"
+      },
+      "xl": {
+        "$value": "-0.46000000834465027px"
+      },
+      "l": {
+        "$value": "-0.3400000035762787px"
+      },
+      "m": {
+        "$value": "-0.25px"
+      },
+      "s": {
+        "$value": "-0.18000000715255737px"
+      },
+      "xs": {
+        "$value": "-0.07999999821186066px"
+      },
+      "xxxs": {
+        "$value": "0.07999999821186066px"
+      }
+    },
+    "weight": {
+      "semibold": {
+        "$value": "semibold"
+      },
+      "medium": {
+        "$value": "medium"
+      },
+      "regular": {
+        "$value": "regular"
+      }
+    }
+  },
+  "corner-radius": {
+    "s": {
+      "$value": "4px"
+    },
+    "m": {
+      "$value": "8px"
+    },
+    "l": {
+      "$value": "12px"
+    },
+    "full": {
+      "$value": "9999px"
+    }
+  }
+}
