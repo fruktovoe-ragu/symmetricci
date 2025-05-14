@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
-import { Text } from '../Text/Text';
+import { Text } from 'src/components/Text/Text';
 import { ITooltipProps, defaultProps, Variant } from './TooltipTypes';
 import {
     StyledTooltipBody,

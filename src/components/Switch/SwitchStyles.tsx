@@ -7,7 +7,10 @@ import { allTokens, lightTheme } from 'src/design-tokens/themes';
 
 export const StyledSwitch = styled(SwitchPrimitive.Root)<{ brand: BrandsType }>`
     ${({ brand = defaultProps.brand, theme = lightTheme }) => {
-        const { switchStyleData } = useGenerateSwitchData(theme);
+        // Temporary workaround while theming works only inside Storybook and not globally.
+        const tokensData = Object.keys(theme).length === 0 ? lightTheme : theme;
+
+        const { switchStyleData } = useGenerateSwitchData(tokensData);
         const { defaultChecked, hoveredChecked, pressedChecked } = switchStyleData.brands[brand];
         const {
             defaultState,
@@ -47,7 +50,7 @@ export const StyledSwitch = styled(SwitchPrimitive.Root)<{ brand: BrandsType }>`
 
             span {
                 background: ${defaultState.circleBackgroundColor};
-                border-radius: ${theme.radii.full};
+                border-radius: ${tokensData.radii.full};
                 position: absolute;
                 top: 2px;
                 left: 2px;
@@ -58,7 +61,7 @@ export const StyledSwitch = styled(SwitchPrimitive.Root)<{ brand: BrandsType }>`
 
             &:focus-visible {
                 outline-offset: 2px;
-                outline: 4px solid ${theme.colors.border.statusOffsetGeneral};
+                outline: 4px solid ${tokensData.colors.border.statusOffsetGeneral};
             }
 
             &:hover {

@@ -2,6 +2,7 @@ import { styled, css, keyframes } from "styled-components";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { defaultProps, Variant, VariantType } from "./TooltipTypes";
 import { useGenerateTooltipData } from "./TooltipThemes";
+import { lightTheme } from 'src/design-tokens/themes';
 
 const fadeIn = keyframes`
   from {
@@ -26,14 +27,17 @@ const fadeOut = keyframes`
 
 export const StyledTooltipBody = styled(TooltipPrimitive.Content)<{ variant: VariantType }>`
   ${({ variant = defaultProps.variant, theme }) => {
-    const { tooltipStyleData } = useGenerateTooltipData(theme);
+    // Temporary workaround while theming works only inside Storybook and not globally.
+    const tokensData = Object.keys(theme).length === 0 ? lightTheme : theme;
+
+    const { tooltipStyleData } = useGenerateTooltipData(tokensData);
     const { bodyBackgroundColor, color } = tooltipStyleData[variant];
 
     return css`
       background-color: ${bodyBackgroundColor};
       color: ${color};
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
-      border-radius: ${theme.radii.s};
+      border-radius: ${tokensData.radii.s};
       padding: ${variant === Variant.ALERT ? '12px 16px' : '4px 8px'};
       min-height: 28px;
       max-width: 280px;
@@ -64,7 +68,7 @@ export const StyledTooltipBody = styled(TooltipPrimitive.Content)<{ variant: Var
         height: 20px;
 
         path {
-          fill: ${theme.colors.foreground.statusError};
+          fill: ${tokensData.colors.foreground.statusError};
         }
       }
     `;

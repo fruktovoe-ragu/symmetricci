@@ -120,9 +120,6 @@
           "info": {
             "$value": "#006adc"
           },
-          "info_inverted": {
-            "$value": "#7ebfff"
-          },
           "info-subdued": {
             "$value": "#0091ff"
           },
@@ -187,9 +184,6 @@
         "status": {
           "info": {
             "$value": "#006adc"
-          },
-          "info_inverted": {
-            "$value": "#7ebfff"
           },
           "info-subdued": {
             "$value": "#0091ff"
@@ -307,17 +301,14 @@
           "info": {
             "$value": "#f5faff"
           },
+          "info-solid": {
+            "$value": "#006adc"
+          },
           "info_hovered": {
             "$value": "rgba(0, 145, 255, 0.0902)"
           },
           "info_pressed": {
             "$value": "rgba(0, 145, 255, 0.1412)"
-          },
-          "info_inverted-hovered": {
-            "$value": "rgba(54, 158, 255, 0.2510)"
-          },
-          "info_inverted-pressed": {
-            "$value": "rgba(54, 158, 255, 0.1216)"
           },
           "success": {
             "$value": "#f2fcf5"
@@ -325,14 +316,11 @@
           "warning": {
             "$value": "#fff9ed"
           },
-          "warning_hovered": {
-            "$value": "rgba(255, 178, 36, 0.0902)"
-          },
-          "warning_pressed": {
-            "$value": "rgba(255, 178, 36, 0.1412)"
-          },
           "error": {
             "$value": "#fff8f8"
+          },
+          "error-solid": {
+            "$value": "#cd2b31"
           },
           "error_hovered": {
             "$value": "rgba(229, 72, 77, 0.0902)"
@@ -404,9 +392,6 @@
           "info": {
             "$value": "#7ebfff"
           },
-          "info_inverted": {
-            "$value": "#006adc"
-          },
           "info-subdued": {
             "$value": "#0091ff"
           },
@@ -471,9 +456,6 @@
         "status": {
           "info": {
             "$value": "#7ebfff"
-          },
-          "info_inverted": {
-            "$value": "#006adc"
           },
           "info-subdued": {
             "$value": "#0091ff"
@@ -591,17 +573,14 @@
           "info": {
             "$value": "#0f1b2d"
           },
+          "info-solid": {
+            "$value": "#7ebfff"
+          },
           "info_hovered": {
             "$value": "rgba(54, 158, 255, 0.2510)"
           },
           "info_pressed": {
             "$value": "rgba(54, 158, 255, 0.1216)"
-          },
-          "info_inverted-hovered": {
-            "$value": "rgba(0, 145, 255, 0.0902)"
-          },
-          "info_inverted-pressed": {
-            "$value": "rgba(0, 145, 255, 0.1412)"
           },
           "success": {
             "$value": "#0c1f17"
@@ -609,14 +588,11 @@
           "warning": {
             "$value": "#271700"
           },
-          "warning_hovered": {
-            "$value": "rgba(255, 203, 71, 0.2510)"
-          },
-          "warning_pressed": {
-            "$value": "rgba(255, 203, 71, 0.1216)"
-          },
           "error": {
             "$value": "#291415"
+          },
+          "error-solid": {
+            "$value": "#ff6369"
           },
           "error_hovered": {
             "$value": "rgba(242, 85, 90, 0.2510)"

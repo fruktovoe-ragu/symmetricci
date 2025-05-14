@@ -1,5 +1,6 @@
 import { styled, css } from "styled-components";
 import { ITextProps, defaultProps, TagsType } from "./TextTypes";
+import { lightTheme } from 'src/design-tokens/themes';
 
 export const StyledText = styled.div<ITextProps & { as?: TagsType}>`
   ${({
@@ -8,16 +9,19 @@ export const StyledText = styled.div<ITextProps & { as?: TagsType}>`
     align,
     theme,
   }) => {
+    // Temporary workaround while theming works only inside Storybook and not globally.
+    const tokensData = Object.keys(theme).length === 0 ? lightTheme : theme;
+
     const {
       fontFamily,
       fontSize,
       fontWeight,
       letterSpacing,
       lineHeight,
-    } = theme.typography[typography];
+    } = tokensData.typography[typography];
 
     return css`
-        color: ${color === "inherit" ? "inherit" : theme.colors.foreground[color]};
+        color: ${color === "inherit" ? "inherit" : tokensData.colors.foreground[color]};
         font-family: ${fontFamily};
         font-size: ${fontSize};
         font-weight: ${fontWeight};

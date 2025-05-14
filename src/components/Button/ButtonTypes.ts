@@ -11,10 +11,7 @@ export type ButtonRanksType = typeof ButtonRanks[keyof typeof ButtonRanks];
 
 export const ButtonVariants = {
     ...Brands,
-    UNIVERSAL_INVERTED: 'universal-inverted',
     INFO: 'info',
-    INFO_INVERTED: 'info-inverted',
-    WARNING: 'warning',
     DANGER: 'danger',
 } as const;
 
@@ -39,7 +36,7 @@ export interface IButtonProps {
      */
     variant?: ButtonVariantsType;
     /**
-     * Visual importance of the button (Primary rank doesn't work for status themes)
+     * Visual importance of the button
      */
     rank?: ButtonRanksType;
     /**

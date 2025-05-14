@@ -2,12 +2,12 @@
 
 import { ColorThemes } from 'src/types/common';
 
-export const foregroundTokens = ["generalPrimary", "generalPrimaryInverted", "generalSecondary", "generalTertiary", "generalLink", "generalLinkVisited", "generalLinkPressed", "generalInteractive", "generalInteractiveInverted", "generalInteractiveInvertedAlt", "generalWhiteStable", "generalBlackWhite", "generalTransparent", "brandBrand1", "brandBrand2", "statusInfo", "statusInfoInverted", "statusInfoSubdued", "statusSuccess", "statusSuccessSubdued", "statusWarning", "statusWarningSubdued", "statusError", "statusErrorSubdued", "statusDisabled"] as const;
+export const foregroundTokens = ["generalPrimary", "generalPrimaryInverted", "generalSecondary", "generalTertiary", "generalLink", "generalLinkVisited", "generalLinkPressed", "generalInteractive", "generalInteractiveInverted", "generalInteractiveInvertedAlt", "generalWhiteStable", "generalBlackWhite", "generalTransparent", "brandBrand1", "brandBrand2", "statusInfo", "statusInfoSubdued", "statusSuccess", "statusSuccessSubdued", "statusWarning", "statusWarningSubdued", "statusError", "statusErrorSubdued", "statusDisabled"] as const;
 
-export const borderTokens = ["generalMain", "generalMainSubtle", "generalMainSolid", "generalInteractive", "generalInteractiveInverted", "generalInteractiveHovered", "generalInteractivePressed", "generalWhite", "brandBrand1", "brandBrand2", "statusInfo", "statusInfoInverted", "statusInfoSubdued", "statusSuccessSubdued", "statusWarning", "statusWarningSubdued", "statusError", "statusErrorSubdued", "statusDisabled", "statusOffsetGeneral", "statusOffsetError"] as const;
+export const borderTokens = ["generalMain", "generalMainSubtle", "generalMainSolid", "generalInteractive", "generalInteractiveInverted", "generalInteractiveHovered", "generalInteractivePressed", "generalWhite", "brandBrand1", "brandBrand2", "statusInfo", "statusInfoSubdued", "statusSuccessSubdued", "statusWarning", "statusWarningSubdued", "statusError", "statusErrorSubdued", "statusDisabled", "statusOffsetGeneral", "statusOffsetError"] as const;
 
-export const backgroundTokens = ["generalMain", "generalMainInverted", "generalMainAltDarkMode", "generalMainAlt", "generalUnderlying", "generalNoticeable", "generalNegative", "generalNegativeSolid", "generalNegativeSubdued", "generalInteractive", "generalInteractiveInverted", "generalInteractiveSubdued", "generalOverlay", "generalOverlaySubtle", "generalOverlayOnAccentHovered", "generalOverlayOnAccentPressed", "generalOverlayOnColorlessHovered", "generalOverlayOnColorlessPressed", "generalOverlayOnColorlessInvertedHovered", "generalOverlayOnColorlessInvertedPressed", "brandBrand1Primary", "brandBrand1SecondaryHovered", "brandBrand1SecondaryPressed", "brandBrand2Primary", "brandBrand2SecondaryHovered", "brandBrand2SecondaryPressed", "statusInfo", "statusInfoHovered", "statusInfoPressed", "statusInfoInvertedHovered", "statusInfoInvertedPressed", "statusSuccess", "statusWarning", "statusWarningHovered", "statusWarningPressed", "statusError", "statusErrorHovered", "statusErrorPressed", "statusDisabled", "statusDisabledSubtle"] as const;
-        
+export const backgroundTokens = ["generalMain", "generalMainInverted", "generalMainAltDarkMode", "generalMainAlt", "generalUnderlying", "generalNoticeable", "generalNegative", "generalNegativeSolid", "generalNegativeSubdued", "generalInteractive", "generalInteractiveInverted", "generalInteractiveSubdued", "generalOverlay", "generalOverlaySubtle", "generalOverlayOnAccentHovered", "generalOverlayOnAccentPressed", "generalOverlayOnColorlessHovered", "generalOverlayOnColorlessPressed", "generalOverlayOnColorlessInvertedHovered", "generalOverlayOnColorlessInvertedPressed", "brandBrand1Primary", "brandBrand1SecondaryHovered", "brandBrand1SecondaryPressed", "brandBrand2Primary", "brandBrand2SecondaryHovered", "brandBrand2SecondaryPressed", "statusInfo", "statusInfoSolid", "statusInfoHovered", "statusInfoPressed", "statusSuccess", "statusWarning", "statusError", "statusErrorSolid", "statusErrorHovered", "statusErrorPressed", "statusDisabled", "statusDisabledSubtle"] as const;
+
 export const colorValues: ColorThemes = {
   "lightTheme": {
     "foreground": {
@@ -27,7 +27,6 @@ export const colorValues: ColorThemes = {
       "brandBrand1": "#5146CE",
       "brandBrand2": "#1A9991",
       "statusInfo": "#006adc",
-      "statusInfoInverted": "#7ebfff",
       "statusInfoSubdued": "#0091ff",
       "statusSuccess": "#18794e",
       "statusSuccessSubdued": "#30a46c",
@@ -49,7 +48,6 @@ export const colorValues: ColorThemes = {
       "brandBrand1": "#5146CE",
       "brandBrand2": "#1A9991",
       "statusInfo": "#006adc",
-      "statusInfoInverted": "#7ebfff",
       "statusInfoSubdued": "#0091ff",
       "statusSuccessSubdued": "#30a46c",
       "statusWarning": "#c17a00",
@@ -88,15 +86,13 @@ export const colorValues: ColorThemes = {
       "brandBrand2SecondaryHovered": "rgba(26, 153, 145, 0.0902)",
       "brandBrand2SecondaryPressed": "rgba(26, 153, 145, 0.1412)",
       "statusInfo": "#f5faff",
+      "statusInfoSolid": "#006adc",
       "statusInfoHovered": "rgba(0, 145, 255, 0.0902)",
       "statusInfoPressed": "rgba(0, 145, 255, 0.1412)",
-      "statusInfoInvertedHovered": "rgba(54, 158, 255, 0.2510)",
-      "statusInfoInvertedPressed": "rgba(54, 158, 255, 0.1216)",
       "statusSuccess": "#f2fcf5",
       "statusWarning": "#fff9ed",
-      "statusWarningHovered": "rgba(255, 178, 36, 0.0902)",
-      "statusWarningPressed": "rgba(255, 178, 36, 0.1412)",
       "statusError": "#fff8f8",
+      "statusErrorSolid": "#cd2b31",
       "statusErrorHovered": "rgba(229, 72, 77, 0.0902)",
       "statusErrorPressed": "rgba(229, 72, 77, 0.1412)",
       "statusDisabled": "#d9d9db",
@@ -121,7 +117,6 @@ export const colorValues: ColorThemes = {
       "brandBrand1": "#3c76e8",
       "brandBrand2": "#ec5e41",
       "statusInfo": "#7ebfff",
-      "statusInfoInverted": "#006adc",
       "statusInfoSubdued": "#0091ff",
       "statusSuccess": "#4cc38a",
       "statusSuccessSubdued": "#30a46c",
@@ -143,7 +138,6 @@ export const colorValues: ColorThemes = {
       "brandBrand1": "#3c76e8",
       "brandBrand2": "#ec5e41",
       "statusInfo": "#7ebfff",
-      "statusInfoInverted": "#006adc",
       "statusInfoSubdued": "#0091ff",
       "statusSuccessSubdued": "#30a46c",
       "statusWarning": "#f1a10d",
@@ -182,15 +176,13 @@ export const colorValues: ColorThemes = {
       "brandBrand2SecondaryHovered": "rgba(26, 153, 145, 0.2510)",
       "brandBrand2SecondaryPressed": "rgba(26, 153, 145, 0.1216)",
       "statusInfo": "#0f1b2d",
+      "statusInfoSolid": "#7ebfff",
       "statusInfoHovered": "rgba(54, 158, 255, 0.2510)",
       "statusInfoPressed": "rgba(54, 158, 255, 0.1216)",
-      "statusInfoInvertedHovered": "rgba(0, 145, 255, 0.0902)",
-      "statusInfoInvertedPressed": "rgba(0, 145, 255, 0.1412)",
       "statusSuccess": "#0c1f17",
       "statusWarning": "#271700",
-      "statusWarningHovered": "rgba(255, 203, 71, 0.2510)",
-      "statusWarningPressed": "rgba(255, 203, 71, 0.1216)",
       "statusError": "#291415",
+      "statusErrorSolid": "#ff6369",
       "statusErrorHovered": "rgba(242, 85, 90, 0.2510)",
       "statusErrorPressed": "rgba(242, 85, 90, 0.1216)",
       "statusDisabled": "#3e3e3e",
@@ -198,4 +190,3 @@ export const colorValues: ColorThemes = {
     }
   }
 };
-        

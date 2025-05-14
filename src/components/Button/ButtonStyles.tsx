@@ -2,6 +2,7 @@ import { styled, css } from "styled-components";
 import { IButtonProps, defaultProps, ButtonVariants, ButtonRanks } from "./ButtonTypes";
 import { useGenerateButtonData, ButtonAllVariantsType } from "./ButtonThemes";
 import { StyledPreloader } from "src/components/Preloader/PreloaderStyles";
+import { lightTheme } from 'src/design-tokens/themes';
 
 export const StyledButton = styled.div<IButtonProps & { as?: 'a' | 'button'} & { hasContent: boolean }>`
     ${({
@@ -13,7 +14,10 @@ export const StyledButton = styled.div<IButtonProps & { as?: 'a' | 'button'} & {
         hasContent,
         theme,
     }) => {
-        const { buttonStyleData } = useGenerateButtonData(theme);
+        // Temporary workaround while theming works only inside Storybook and not globally.
+        const tokensData = Object.keys(theme).length === 0 ? lightTheme : theme;
+
+        const { buttonStyleData } = useGenerateButtonData(tokensData);
         const certainVariant =  buttonStyleData.variants[variant as keyof ButtonAllVariantsType];
         const { defaultState, hovered, pressed } = certainVariant[rank];
         const { disabledState } =  buttonStyleData.common[rank];
@@ -30,7 +34,7 @@ export const StyledButton = styled.div<IButtonProps & { as?: 'a' | 'button'} & {
         return css`
             background-color: ${defaultState.backgroundColor};
             border-color: ${rank === ButtonRanks.SECONDARY ? defaultState.borderColor : "transparent"};
-            border-width: ${rank === ButtonRanks.SECONDARY ? borderWidth : "0"};
+            border-width: ${rank === ButtonRanks.SECONDARY && variant !== ButtonVariants.UNIVERSAL ? borderWidth : "0"};
             border-style: solid;
             border-radius: ${borderRadius};
             color: ${defaultState.color};
@@ -71,8 +75,8 @@ export const StyledButton = styled.div<IButtonProps & { as?: 'a' | 'button'} & {
             &:focus-visible {
                 outline-offset: 2px;
                 outline: 4px solid ${variant === ButtonVariants.DANGER ?
-                    theme.colors.border.statusOffsetError :
-                    theme.colors.border.statusOffsetGeneral};
+                    tokensData.colors.border.statusOffsetError :
+                    tokensData.colors.border.statusOffsetGeneral};
             }
 
             &:hover {

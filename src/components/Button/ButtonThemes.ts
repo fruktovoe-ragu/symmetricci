@@ -210,28 +210,28 @@ export const useGenerateButtonData = (theme: any) => {
                 [ButtonRanks.PRIMARY]: {
                     defaultState: {
                         borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalInteractive}`,
-                        color: `${theme.colors.foreground.generalInteractiveInvertedAlt}`,
+                        backgroundColor: `${theme.colors.background.generalNoticeable}`,
+                        color: `${theme.colors.foreground.generalInteractive}`,
                     },
                     hovered: {
                         borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnAccentHovered}`,
-                        color: `${theme.colors.foreground.generalInteractiveInvertedAlt}`,
+                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessHovered}`,
+                        color: `${theme.colors.foreground.generalInteractive}`,
                     },
                     pressed: {
                         borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnAccentPressed}`,
-                        color: `${theme.colors.foreground.generalInteractiveInvertedAlt}`,
+                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessPressed}`,
+                        color: `${theme.colors.foreground.generalInteractive}`,
                     },
                 },
                 [ButtonRanks.SECONDARY]: {
                     defaultState: {
-                        borderColor: `${theme.colors.border.generalInteractive}`,
-                        backgroundColor: "transparent",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.generalMain}`,
                         color: `${theme.colors.foreground.generalInteractive}`,
                     },
                     hovered: {
-                        borderColor: `${theme.colors.border.generalInteractive}`,
+                        borderColor: "transparent",
                         backgroundColor: `${theme.colors.background.generalOverlayOnColorlessHovered}`,
                         color: `${theme.colors.foreground.generalInteractive}`,
                     },
@@ -256,78 +256,25 @@ export const useGenerateButtonData = (theme: any) => {
                         borderColor: "transparent",
                         backgroundColor: `${theme.colors.background.generalOverlayOnColorlessPressed}`,
                         color: `${theme.colors.foreground.generalInteractive}`,
-                    },
-                },
-            },
-            [ButtonVariants.UNIVERSAL_INVERTED]: {
-                [ButtonRanks.PRIMARY]: {
-                    defaultState: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalInteractiveInverted}`,
-                        color: `${theme.colors.foreground.generalInteractive}`,
-                    },
-                    hovered: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessHovered}`,
-                        color: `${theme.colors.foreground.generalInteractive}`,
-                    },
-                    pressed: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessPressed}`,
-                        color: `${theme.colors.foreground.generalInteractive}`,
-                    },
-                },
-                [ButtonRanks.SECONDARY]: {
-                    defaultState: {
-                        borderColor: `${theme.colors.border.generalInteractiveInverted}`,
-                        backgroundColor: "transparent",
-                        color: `${theme.colors.foreground.generalInteractiveInverted}`,
-                    },
-                    hovered: {
-                        borderColor: `${theme.colors.border.generalInteractive}`,
-                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessInvertedHovered}`,
-                        color: `${theme.colors.foreground.generalInteractiveInverted}`,
-                    },
-                    pressed: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessInvertedPressed}`,
-                        color: `${theme.colors.foreground.generalInteractiveInverted}`,
-                    },
-                },
-                [ButtonRanks.TERTIARY]: {
-                    defaultState: {
-                        borderColor: "transparent",
-                        backgroundColor: "transparent",
-                        color: `${theme.colors.foreground.generalInteractiveInverted}`,
-                    },
-                    hovered: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessInvertedHovered}`,
-                        color: `${theme.colors.foreground.generalInteractiveInverted}`,
-                    },
-                    pressed: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.generalOverlayOnColorlessInvertedPressed}`,
-                        color: `${theme.colors.foreground.generalInteractiveInverted}`,
                     },
                 },
             },
             [ButtonVariants.INFO]: {
                 [ButtonRanks.PRIMARY]: {
                     defaultState: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.statusInfoSolid}`,
+                        color: `${theme.colors.foreground.generalWhiteStable}`,
                     },
                     hovered: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.generalOverlayOnAccentHovered}`,
+                        color: `${theme.colors.foreground.generalWhiteStable}`,
                     },
                     pressed: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.generalOverlayOnAccentPressed}`,
+                        color: `${theme.colors.foreground.generalWhiteStable}`,
                     },
                 },
                 [ButtonRanks.SECONDARY]: {
@@ -362,131 +309,25 @@ export const useGenerateButtonData = (theme: any) => {
                         borderColor: "transparent",
                         backgroundColor: `${theme.colors.background.statusInfoPressed}`,
                         color: `${theme.colors.foreground.statusInfo}`,
-                    },
-                }
-            },
-            [ButtonVariants.INFO_INVERTED]: {
-                [ButtonRanks.PRIMARY]: {
-                    defaultState: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
-                    },
-                    hovered: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
-                    },
-                    pressed: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
-                    },
-                },
-                [ButtonRanks.SECONDARY]: {
-                    defaultState: {
-                        borderColor: `${theme.colors.border.statusInfoInverted}`,
-                        backgroundColor: "transparent",
-                        color: `${theme.colors.foreground.statusInfoInverted}`,
-                    },
-                    hovered: {
-                        borderColor: `${theme.colors.border.statusInfoInverted}`,
-                        backgroundColor: `${theme.colors.background.statusInfoInvertedHovered}`,
-                        color: `${theme.colors.foreground.statusInfoInverted}`,
-                    },
-                    pressed: {
-                        borderColor: `${theme.colors.border.statusInfoInverted}`,
-                        backgroundColor: `${theme.colors.background.statusInfoInvertedPressed}`,
-                        color: `${theme.colors.foreground.statusInfoInverted}`,
-                    },
-                },
-                [ButtonRanks.TERTIARY]: {
-                    defaultState: {
-                        borderColor: "transparent",
-                        backgroundColor: "transparent",
-                        color: `${theme.colors.foreground.statusInfoInverted}`,
-                    },
-                    hovered: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.statusInfoInvertedHovered}`,
-                        color: `${theme.colors.foreground.statusInfoInverted}`,
-                    },
-                    pressed: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.statusInfoInvertedPressed}`,
-                        color: `${theme.colors.foreground.statusInfoInverted}`,
-                    },
-                }
-            },
-            [ButtonVariants.WARNING]: {
-                [ButtonRanks.PRIMARY]: {
-                    defaultState: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
-                    },
-                    hovered: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
-                    },
-                    pressed: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
-                    },
-                },
-                [ButtonRanks.SECONDARY]: {
-                    defaultState: {
-                        borderColor: `${theme.colors.border.statusWarning}`,
-                        backgroundColor: "transparent",
-                        color: `${theme.colors.foreground.statusWarning}`,
-                    },
-                    hovered: {
-                        borderColor: `${theme.colors.border.statusWarning}`,
-                        backgroundColor: `${theme.colors.background.statusWarningHovered}`,
-                        color: `${theme.colors.foreground.statusWarning}`,
-                    },
-                    pressed: {
-                        borderColor: `${theme.colors.border.statusWarning}`,
-                        backgroundColor: `${theme.colors.background.statusWarningPressed}`,
-                        color: `${theme.colors.foreground.statusWarning}`,
-                    },
-                },
-                [ButtonRanks.TERTIARY]: {
-                    defaultState: {
-                        borderColor: "transparent",
-                        backgroundColor: "transparent",
-                        color: `${theme.colors.foreground.statusWarning}`,
-                    },
-                    hovered: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.statusWarningHovered}`,
-                        color: `${theme.colors.foreground.statusWarning}`,
-                    },
-                    pressed: {
-                        borderColor: "transparent",
-                        backgroundColor: `${theme.colors.background.statusWarningPressed}`,
-                        color: `${theme.colors.foreground.statusWarning}`,
                     },
                 }
             },
             [ButtonVariants.DANGER]: {
                 [ButtonRanks.PRIMARY]: {
                     defaultState: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.statusErrorSolid}`,
+                        color: `${theme.colors.foreground.generalWhiteStable}`,
                     },
                     hovered: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.generalOverlayOnAccentHovered}`,
+                        color: `${theme.colors.foreground.generalWhiteStable}`,
                     },
                     pressed: {
-                        borderColor: "",
-                        backgroundColor: "",
-                        color: "",
+                        borderColor: "transparent",
+                        backgroundColor: `${theme.colors.background.generalOverlayOnAccentPressed}`,
+                        color: `${theme.colors.foreground.generalWhiteStable}`,
                     },
                 },
                 [ButtonRanks.SECONDARY]: {

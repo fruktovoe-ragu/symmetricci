@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { StoryObj, Meta } from "@storybook/react";
 import { Tooltip as TooltipComponent } from "./Tooltip";
-import { Button } from "../Button/Button";
+import { Button } from "src/components/Button/Button";
 import { ITooltipProps, defaultProps, Variant, Side, TooltipAlign } from './TooltipTypes';
 
 const tooltipContent = 'You must transfer the ownership of this room before you can leave';

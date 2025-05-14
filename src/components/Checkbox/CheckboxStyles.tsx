@@ -3,11 +3,14 @@ import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import { defaultProps } from "./CheckboxTypes";
 import { BrandsType } from 'src/constants/common';
 import { useGenerateCheckboxData } from "./CheckboxThemes";
-import { allTokens } from 'src/design-tokens/themes';
+import { allTokens, lightTheme } from 'src/design-tokens/themes';
 
 export const StyledCheckbox = styled(CheckboxPrimitive.Root)<{ brand: BrandsType }>`
     ${({ brand = defaultProps.brand, theme }) => {
-        const { checkboxStyleData } = useGenerateCheckboxData(theme);
+        // Temporary workaround while theming works only inside Storybook and not globally.
+        const tokensData = Object.keys(theme).length === 0 ? lightTheme : theme;
+
+        const { checkboxStyleData } = useGenerateCheckboxData(tokensData);
         const { defaultChecked, hoveredChecked, pressedChecked } = checkboxStyleData.brands[brand];
         const {
             defaultState,
@@ -22,7 +25,7 @@ export const StyledCheckbox = styled(CheckboxPrimitive.Root)<{ brand: BrandsType
             background: ${defaultState.backgroundColor};
             border: 2px solid;
             border-color: ${defaultState.borderColor};
-            border-radius: ${theme.radii.s};
+            border-radius: ${tokensData.radii.s};
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -53,7 +56,7 @@ export const StyledCheckbox = styled(CheckboxPrimitive.Root)<{ brand: BrandsType
 
             &:focus-visible {
                 outline-offset: 2px;
-                outline: 4px solid ${theme.colors.border.statusOffsetGeneral};
+                outline: 4px solid ${tokensData.colors.border.statusOffsetGeneral};
             }
 
             &:hover {
@@ -106,7 +109,7 @@ export const StyledCheckbox = styled(CheckboxPrimitive.Root)<{ brand: BrandsType
             }
 
             &[aria-invalid="true"]:focus-visible {
-                outline: 4px solid ${theme.colors.border.statusOffsetError};
+                outline: 4px solid ${tokensData.colors.border.statusOffsetError};
             }
 
             ${StyledCheckboxIcon} {

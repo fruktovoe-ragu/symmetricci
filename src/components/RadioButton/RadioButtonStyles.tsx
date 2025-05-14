@@ -2,11 +2,14 @@ import { styled, css } from "styled-components";
 import { defaultProps } from "./RadioButtonTypes";
 import { BrandsType } from 'src/constants/common';
 import { useGenerateRadioButtonData } from "./RadioButtonThemes";
-import { allTokens } from 'src/design-tokens/themes';
+import { allTokens, lightTheme } from 'src/design-tokens/themes';
 
 export const StyledRadioButonCustomInput = styled.div<{ brand: BrandsType }>`
     ${({ brand = defaultProps.brand, theme }) => {
-        const { radioButtonStyleData } = useGenerateRadioButtonData(theme);
+        // Temporary workaround while theming works only inside Storybook and not globally.
+        const tokensData = Object.keys(theme).length === 0 ? lightTheme : theme;
+
+        const { radioButtonStyleData } = useGenerateRadioButtonData(tokensData);
         const { defaultChecked } = radioButtonStyleData.brands[brand];
         const {
             defaultState,
@@ -20,7 +23,7 @@ export const StyledRadioButonCustomInput = styled.div<{ brand: BrandsType }>`
             background: ${defaultState.bodyBackgroundColor};
             border: 2px solid;
             border-color: ${defaultState.borderColor};
-            border-radius: ${theme.radii.full};
+            border-radius: ${tokensData.radii.full};
             box-sizing: border-box;
             cursor: pointer;
             display: flex;
@@ -48,7 +51,7 @@ export const StyledRadioButonCustomInput = styled.div<{ brand: BrandsType }>`
             &:after {
                 content: '';
                 background: ${defaultState.circleBackgroundColor};
-                border-radius: ${theme.radii.full};
+                border-radius: ${tokensData.radii.full};
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -59,7 +62,7 @@ export const StyledRadioButonCustomInput = styled.div<{ brand: BrandsType }>`
 
             ${StyledRadioButton}:focus-visible + & {
                 outline-offset: 2px;
-                outline: 4px solid ${theme.colors.border.statusOffsetGeneral};
+                outline: 4px solid ${tokensData.colors.border.statusOffsetGeneral};
             }
 
             &:hover {

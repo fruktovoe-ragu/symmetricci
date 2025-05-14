@@ -9,7 +9,7 @@ export const Aligns = {
 export const Brands = {
     BRAND_1: 'brand1',
     BRAND_2: 'brand2',
-    UNIVERSAL: 'universal',
+    UNIVERSAL: 'neutral',
 } as const;
 
 export const Typography = {
